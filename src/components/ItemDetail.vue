@@ -4,7 +4,25 @@
       <h4>{{ items[$route.params.id].title }}</h4>
       <p>{{ items[$route.params.id].date }}</p>
     </div>
-    <p>{{ items[$route.params.id].content }}</p>
+    <p>
+      {{ items[$route.params.id].content }}
+    </p>
+    <div class="buttonBox">
+      <button
+        @click="$router.push('/detail/' + $route.params.id + '/author')"
+        type="button"
+        class="btn btn-outline-info mb-4 w-25"
+      >
+        who am i?
+      </button>
+      <button
+        @click="$router.push('/detail/' + $route.params.id + '/comment')"
+        type="button"
+        class="btn btn-outline-success mb-4 w-25"
+      >
+        Comment
+      </button>
+    </div>
     <router-view></router-view>
   </div>
 </template>
@@ -32,5 +50,9 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   height: 80px;
+}
+.buttonBox {
+  display: flex;
+  justify-content: space-around;
 }
 </style>
