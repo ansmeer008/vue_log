@@ -1,22 +1,31 @@
 const data = [
   {
-    title: "첫 째 프로젝트 : 허위매물 전문 부동산 앱",
-    content: "Vue를 이용하면 비누같이 매끈한 앱을 만들 수 있습니다",
+    title: "vue-router 소개",
+    content:
+      "vue-router 패키지를 이용하면 프로젝트 내부에서 페이지 간 이동을 편리하게 할 수 있습니다",
     date: "September 24, 2021",
     number: 0,
   },
   {
-    title: "둘 째 프로젝트 : 오마카세 배달 앱",
-    content: "음식이 아니라 셰프를 직접 배달해드립니다",
+    title: "$route와 $router의 차이",
+    content:
+      "$route는 현재 경로 관련된 데이터를 사용할 수 있게 도와줍니다. 반면 $router는 페이지 이동과 관련된 기능들을 사용할 수 있게 해줍니다.",
     date: "October 20, 2020",
     number: 1,
   },
   {
-    title: "셋 째 프로젝트 : 현피 앱",
+    title: "nested routes는 무엇일까?",
     content:
-      "거리를 설정하면 가장 가까운 파이터를 소개해드려요! 서로 싸워보세요",
+      "만들어진 경로에 children 경로를 붙여 nested routes를 구현할 수 있습니다. Some applications' UIs are composed of components that are nested multiple levels deep. ",
     date: "April 24, 2019",
     number: 2,
+  },
+  {
+    title: "named routes, named views, redirect ",
+    content:
+      "공식 문서를 참고하면 vue-router의 다양한 기능들을 사용할 수 있습니다 :)",
+    date: "April 24, 2019",
+    number: 3,
   },
 ];
 
