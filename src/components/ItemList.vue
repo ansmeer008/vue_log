@@ -1,18 +1,23 @@
 <template>
   <div class="listContainer">
-    <router-link
+    <!-- <router-link
       v-for="(item, i) in items"
       :key="i"
       class="listLink"
       :to="'/detail/' + item.number"
+    > -->
+    <div
+      v-for="(item, i) in items"
+      :key="i"
+      @click="$router.push('/detail/' + item.number)"
+      class="itemContainer"
     >
-      <div class="itemContainer">
-        <h5 class="title">
-          {{ item.title }}
-        </h5>
-        <p class="content">{{ item.date }}</p>
-      </div>
-    </router-link>
+      <h5 class="title">
+        {{ item.title }}
+      </h5>
+      <p class="content">{{ item.date }}</p>
+    </div>
+    <!-- </router-link> -->
   </div>
 </template>
 
@@ -26,11 +31,11 @@ export default {
 </script>
 
 <style>
-.listLink {
+/* .listLink {
   text-decoration: none;
   color: black;
   width: 80%;
-}
+} */
 .listContainer {
   display: flex;
   flex-direction: column;
@@ -47,6 +52,8 @@ export default {
   border-radius: 10px;
   padding: 8px;
   background-color: rgb(246, 245, 244);
+  width: 80%;
+  cursor: pointer;
 }
 .title {
   margin: 0;
