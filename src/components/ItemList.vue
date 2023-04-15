@@ -3,7 +3,7 @@
     <router-link
       v-for="(item, i) in items"
       :key="i"
-      class="link"
+      class="listLink"
       :to="'/detail/' + item.number"
     >
       <div class="itemContainer">
@@ -26,9 +26,10 @@ export default {
 </script>
 
 <style>
-.link {
+.listLink {
   text-decoration: none;
   color: black;
+  width: 80%;
 }
 .listContainer {
   display: flex;
@@ -44,7 +45,6 @@ export default {
   align-items: center;
   margin: 16px;
   border-radius: 10px;
-  width: 80%;
   padding: 8px;
   background-color: rgb(246, 245, 244);
 }

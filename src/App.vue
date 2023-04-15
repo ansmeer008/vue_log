@@ -1,7 +1,9 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Vue_log</a>
+      <router-link class="link" to="/">
+        <a class="navbar-brand" href="#">Vue_log</a>
+      </router-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -15,12 +17,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <router-link to="/">
+          <router-link class="link" to="/">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
           </router-link>
-          <router-link to="/list">
+          <router-link class="link" to="/list">
             <li class="nav-item">
               <a class="nav-link" href="#">List</a>
             </li>
@@ -70,6 +72,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+.link {
+  text-decoration: none;
+  color: black;
 }
 .blogImg {
   width: 100%;

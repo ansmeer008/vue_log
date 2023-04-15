@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-5">
+  <div class="introcontainer">
     <h5>Frontend 개발자 Jade의 블로그입니다!</h5>
     <p>~Vue 공부하는 중!~</p>
     <img
@@ -16,4 +16,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.introcontainer {
+  margin-top: 100px;
+}
+</style>
