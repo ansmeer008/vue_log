@@ -3,6 +3,8 @@ import ItemList from "./components/ItemList.vue";
 import BlogIntro from "./components/BlogIntro.vue";
 import ItemDetail from "./components/ItemDetail.vue";
 import NotFoundError from "./components/NotFoundError.vue";
+import BlogAuthor from "./components/BlogAuthor.vue";
+import ItemComment from "./components/ItemComment.vue";
 
 const routes = [
   {
@@ -16,6 +18,16 @@ const routes = [
   {
     path: "/detail/:id",
     component: ItemDetail,
+    children: [
+      {
+        path: "author",
+        component: BlogAuthor,
+      },
+      {
+        path: "comment",
+        component: ItemComment,
+      },
+    ],
   },
   {
     path: "/:anything(.*)",
