@@ -1,6 +1,6 @@
 # vue_log
 
-https://ansmeer008.github.io/
+https://ansmeer008.github.io/vue_log/
 
 Vue를 이용한 미니 프로젝트입니다.
 
